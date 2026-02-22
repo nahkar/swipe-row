@@ -26,13 +26,21 @@ export type SwipeRowProps = {
   actions: SwipeAction[];
   /** Optional custom swipe threshold. Computed automatically if not provided. */
   maxSwipe?: number;
+  /** Custom className for the root container */
+  className?: string;
+  /** Custom inline style for the root container */
+  style?: React.CSSProperties;
+  /** Custom className for the foreground element */
+  innerClassName?: string;
+  /** Custom inline style for the foreground element */
+  innerStyle?: React.CSSProperties;
 };
 
 /**
  * SwipeRow creates an iOS style swipeable row element that reveals generic actions behind it.
  * Highly configurable and built for generic use across various projects.
  */
-export function SwipeRow({ children, actions, maxSwipe }: SwipeRowProps) {
+export function SwipeRow({ children, actions, maxSwipe, className, style, innerClassName, innerStyle }: SwipeRowProps) {
   const x = useMotionValue(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
@@ -56,7 +64,7 @@ export function SwipeRow({ children, actions, maxSwipe }: SwipeRowProps) {
   };
 
   return (
-    <div ref={containerRef} className={styles.container}>
+    <div ref={containerRef} className={`${styles.container} ${className || ''}`.trim()} style={style}>
       {/* ACTIONS BACKGROUND */}
       <motion.div
         style={{ opacity: backgroundOpacity }}
@@ -87,9 +95,9 @@ export function SwipeRow({ children, actions, maxSwipe }: SwipeRowProps) {
         drag="x"
         dragConstraints={{ left: swipeDistance, right: 0 }}
         dragElastic={0.1}
-        style={{ x }}
+        style={{ x, ...innerStyle }}
         onDragEnd={handleDragEnd}
-        className={styles.foreground}
+        className={`${styles.foreground} ${innerClassName || ''}`.trim()}
       >
         {children}
       </motion.div>

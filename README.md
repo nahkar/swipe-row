@@ -121,6 +121,10 @@ function EmailList() {
 | `children` | `React.ReactNode` | **Required** | The main visible content of your row. |
 | `actions` | `SwipeAction[]` | **Required** | Array of action configurations to be revealed on swipe. |
 | `maxSwipe` | `number` | `undefined` | Override the automatic swipe width calculation (px). |
+| `className` | `string` | `undefined` | Custom CSS class applied to the root container. |
+| `style` | `React.CSSProperties` | `undefined` | Custom inline style applied to the root container. |
+| `innerClassName` | `string` | `undefined` | Custom CSS class applied to the foreground swipeable element. |
+| `innerStyle` | `React.CSSProperties` | `undefined` | Custom inline style applied to the foreground swipeable element. |
 
 ### `SwipeAction` Object
 
