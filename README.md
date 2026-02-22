@@ -10,6 +10,14 @@ A highly customizable, iOS-style swipeable row component for React applications.
 
 ---
 
+<br />
+<div align="center">
+  <img src="./demo.gif" alt="SwipeRow Demo Animation" width="400" />
+</div>
+<br />
+
+---
+
 ## ✨ Features
 
 - **👀 Live Demo:** Try it out instantly at **[swipe-row.onrender.com](https://swipe-row.onrender.com/)**
