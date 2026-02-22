@@ -1,5 +1,5 @@
 {
-  "name": "@nahkar/swipe-row",
+  "name": "swipe-row",
   "version": "1.0.0",
   "description": "A highly customizable, iOS-style swipeable row component for React applications.",
   "type": "module",
@@ -20,6 +20,7 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:demo": "vite build -c vite.demo.config.ts",
     "test": "vitest run",
     "test:ui": "vitest --ui"
   },

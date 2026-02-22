@@ -2,7 +2,7 @@
 
 A highly customizable, iOS-style swipeable row component for React applications. Built with `framer-motion` for buttery-smooth spring physics animations. Perfect for creating lists with interactive hidden actions like "Archive", "Delete", or "Reply".
 
-![npm version](https://img.shields.io/npm/v/@nahkar/swipe-row)
+![npm version](https://img.shields.io/npm/v/swipe-row)
 ![React](https://img.shields.io/badge/react-%5E18.2.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%5E5.2.2-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -23,19 +23,11 @@ A highly customizable, iOS-style swipeable row component for React applications.
 ## 📦 Installation
 
 ```bash
-<<<<<<< HEAD
-npm install @nahkar/swipe-row framer-motion
-# or
-yarn add @nahkar/swipe-row framer-motion
-# or
-pnpm add @nahkar/swipe-row framer-motion
-=======
 npm install swipe-row framer-motion
 # or
 yarn add swipe-row framer-motion
 # or
 pnpm add swipe-row framer-motion
->>>>>>> 7bd739442d427f687c9206bb81a34b2f43cb2e7e
 ```
 
 *Note: `framer-motion` is required as a peer dependency for animations.*
@@ -47,13 +39,8 @@ pnpm add swipe-row framer-motion
 First, import the component and the necessary CSS styles into your React file:
 
 ```tsx
-<<<<<<< HEAD
-import { SwipeRow } from '@nahkar/swipe-row';
-import '@nahkar/swipe-row/style.css'; // Important for default styling!
-=======
 import { SwipeRow } from 'swipe-row';
 import 'swipe-row/style.css'; // Important for default styling!
->>>>>>> 7bd739442d427f687c9206bb81a34b2f43cb2e7e
 ```
 
 ### Basic Example (Single Action)
