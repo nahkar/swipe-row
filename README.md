@@ -3,6 +3,7 @@
 A highly customizable, iOS-style swipeable row component for React applications. Built with `framer-motion` for buttery-smooth spring physics animations. Perfect for creating lists with interactive hidden actions like "Archive", "Delete", or "Reply".
 
 ![npm version](https://img.shields.io/npm/v/swipe-row)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-blueviolet)](https://swipe-row.onrender.com/)
 ![React](https://img.shields.io/badge/react-%5E18.2.0-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-%5E5.2.2-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -11,6 +12,7 @@ A highly customizable, iOS-style swipeable row component for React applications.
 
 ## ✨ Features
 
+- **👀 Live Demo:** Try it out instantly at **[swipe-row.onrender.com](https://swipe-row.onrender.com/)**
 - **Fluid Animations:** Powered by [Framer Motion](https://www.framer.com/motion/) with native-feeling spring physics.
 - **Dynamic Actions:** Pass an unlimited number of custom action buttons (Edit, Delete, Archive, etc.).
 - **Automatic Styling:** Built-in basic styling with CSS Modules so it just works out of the box without polluting global scopes.
