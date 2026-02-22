@@ -1,6 +1,6 @@
 {
   "name": "swipe-row",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A highly customizable, iOS-style swipeable row component for React applications.",
   "type": "module",
   "main": "./dist/swipe-row.cjs.js",
