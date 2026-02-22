@@ -1,0 +1,58 @@
+.container {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f3f4f6; /* light grey so we don't see gaps */
+  touch-action: pan-y;
+  user-select: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Soft premium shadow */
+}
+
+.actionsBackground {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #f3f4f6;
+}
+
+.actionButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: filter 0.2s;
+}
+
+.actionButton:hover {
+  filter: brightness(0.9);
+}
+
+.foreground {
+  position: relative;
+  background-color: white;
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+  /* Smooth border on hover to show interactivity */
+  border-radius: 12px;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.03);
+}
+
+/* Dark mode support - useful for generic components */
+@media (prefers-color-scheme: dark) {
+  .container {
+    background-color: #171717;
+  }
+  .actionsBackground {
+    background-color: #171717;
+  }
+  .foreground {
+    background-color: #262626;
+    color: white;
+  }
+}
